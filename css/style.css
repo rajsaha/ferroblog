@@ -1,0 +1,18 @@
+.site-logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat ExtraBold", serif;
+    font-size: 1.5em;
+}
+
+.site-logo-ferro {
+    color: #252525;
+}
+
+.site-logo-blog {
+    color:#717171;
+}
+
+.site-logo-dot {
+    color:#4f65de;
+}
