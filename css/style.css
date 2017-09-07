@@ -6,6 +6,8 @@
         font-family: 'Lato', sans-serif;
         text-transform: uppercase;
         color:black;
+        font-size:16px;
+        margin-top:30px;
     }
 
     .navbar .navbar-nav {
@@ -23,13 +25,17 @@
         color:#4f65de;
     }
 
+    .fa-circle {
+        color:#959595;
+        font-size:1px;
+    }
 
 /* Left Logo */
     .site-logo {
         text-transform: uppercase;
         font-weight: bold;
         font-family: "Montserrat ExtraBold", serif;
-        font-size: 1.5em;
+        font-size: 36px;
     }
 
     .site-logo-ferro {
@@ -45,11 +51,11 @@
     }
 
 
-/*  */
+/*  Secondary Navigation*/
 .secondary-navigation {
     color:#959595;
     padding:25px;
-    font-size: 0.8em;
+    font-size: 12px;
 }
 
 .secondary-navigation>div>i:hover {
@@ -87,4 +93,55 @@
     font-family:Lato, sans-serif;
     text-transform: uppercase;
     color:#959595;
+    font-size:14px;
+    vertical-align: bottom;
+}
+
+/* Items */
+.ignore-padding-left {
+    padding-left:0px;
+}
+
+.ignore-padding-right {
+    padding-right:0px;
+}
+
+.item {
+    padding:25px;
+    border-left:15px solid transparent;
+}
+
+.item-image {
+    background-color:#cccccc;
+    background:url("../images/foot-1885546.jpg") repeat 0 0;
+
+}
+
+.item-active {
+    border-left: 15px solid rgb(235, 235, 235);
+}
+
+.item-title {
+    font-size: 18px;
+    font-family:"Montserrat SemiBold", Serif;
+}
+
+.date, .tags {
+    font-size:14px;
+    text-transform: uppercase;
+    font-family:"Lato Semibold", sans-serif;
+    color:#959595;
+}
+
+.separator {
+    padding-left:5px;
+    padding-right:5px;
+    color:#959595;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
 }
