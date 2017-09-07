@@ -1,18 +1,90 @@
-.site-logo {
+/* Bootstrap Class Override */
+    .navbar {
+        background-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        color:black;
+    }
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+/* Font Awesome Icons Override */
+    .fa-envelope-open-o {
+        padding-right: 10px;
+        color:#4f65de;
+    }
+
+
+/* Left Logo */
+    .site-logo {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: "Montserrat ExtraBold", serif;
+        font-size: 1.5em;
+    }
+
+    .site-logo-ferro {
+        color: #252525;
+    }
+
+    .site-logo-blog {
+        color:#717171;
+    }
+
+    .site-logo-dot {
+        color:#4f65de;
+    }
+
+
+/*  */
+.secondary-navigation {
+    color:#959595;
+    padding:25px;
+    font-size: 0.8em;
+}
+
+.secondary-navigation>div>i:hover {
+    cursor:pointer;
+    transition:color 0.1s ease-in;
+    color:black;
+}
+
+.secondary-navigation>div>div>i:hover {
+    cursor:pointer;
+    transition:color 0.1s ease-in;
+    color:black;
+}
+
+.secondary-navigation>div>div>span:hover {
+    transition:color 0.1s ease-in;
+    color:black;
+}
+
+.social-icons-padding-right {
+    padding-right:10px;
+}
+
+.featured-categories {
+    font-family:Lato, sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Montserrat ExtraBold", serif;
-    font-size: 1.5em;
+    cursor:pointer;
 }
 
-.site-logo-ferro {
-    color: #252525;
+.featured-categories>span:not(:last-child) {
+    padding-right:10px;
 }
 
-.site-logo-blog {
-    color:#717171;
-}
-
-.site-logo-dot {
-    color:#4f65de;
+.header {
+    font-family:Lato, sans-serif;
+    text-transform: uppercase;
+    color:#959595;
 }
