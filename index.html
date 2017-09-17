@@ -12,6 +12,9 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:400,600,800" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,8 +24,8 @@
 </head>
 <body>
 <div class="container">
-    <div class="row secondary-navigation">
-        <div class="col-md-4">
+    <div class="row secondary-navigation display-flex">
+        <div class="col-md-4 col-xs-4">
             <i class="fa fa-facebook social-icons-padding-right" aria-hidden="true"></i>
             <i class="fa fa-instagram social-icons-padding-right" aria-hidden="true"></i>
             <i class="fa fa-twitter social-icons-padding-right" aria-hidden="true"></i>
@@ -30,7 +33,7 @@
             <i class="fa fa-pinterest social-icons-padding-right" aria-hidden="true"></i>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-4">
             <div class="text-center featured-categories">
                 <span>Inspiration</span>
                 <span>Trends</span>
@@ -39,19 +42,19 @@
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-4">
             <div class="pull-right">
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
         </div>
     </div><!-- /.row -->
 
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row display-flex">
+        <div class="col-md-6 col-xs-6">
             <span class="site-logo site-logo-ferro">Ferro</span><span class="site-logo site-logo-blog">blog</span><span class="site-logo site-logo-dot">.</span>
         </div>
 
-        <div class="col-md-6 header">
+        <div class="col-md-6 col-xs-6 header">
             <div class="pull-right">
                 <span><i class="fa fa-envelope-open-o" aria-hidden="true"></i>Subscribe</span>
             </div>
@@ -119,14 +122,29 @@
 </div><!-- /.container -->
 
 <div class="container">
-    <div class="row">
+    <!-- Carousel -->
+    <div class="row row-margin-bottom-50">
         <div class="col-md-8 ignore-padding-right">
             <div class="item-image">
-                <!--<img src="images/foot-1885546.jpg" class="img-responsive">-->
+                <img src="images/foot-1885546.jpg" class="img-responsive image-blend">
+                <h1>Etiam 19 Bibendum Sapien id Odio Mattis pretium</h1>
+                <p class="item-read-more-button">Read More</p>
+                <div class="item-pagination-container">
+                    <span class="item-pagination" id="item1"></span>
+                    <span class="item-pagination" id="item2"></span>
+                    <span class="item-pagination" id="item3"></span>
+                    <span class="item-pagination" id="item4"></span>
+                    <span class="item-pagination" id="item5"></span>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 ignore-padding-left">
+        <div class="col-md-4 ignore-padding-left items-max-height">
             <div class="item item-active">
+                <p><span class="date">April 02, 2017</span><span class="separator">•</span><span class="tags">Inspiration, Travel</span></p>
+                <p class="item-title">Etiam 19 Bibendum Sapien id Odio Mattis pretium</p>
+            </div>
+
+            <div class="item">
                 <p><span class="date">April 02, 2017</span><span class="separator">•</span><span class="tags">Inspiration, Travel</span></p>
                 <p class="item-title">Etiam 19 Bibendum Sapien id Odio Mattis pretium</p>
             </div>
@@ -148,6 +166,471 @@
         </div>
     </div><!-- /.row -->
 </div><!-- /.container -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center featured-post-h1">When the rain is blowing in your face</h1>
+            <p class="text-center featured-post-h1-underline"></p>
+        </div>
+
+        <div class="col-md-12 fp-meta">
+            <div class="col-md-3 col-xs-3">
+                <div class="fp-user pull-right">
+                    <img src="images/matt-alaniz-119775.jpg">
+                    <span>BY</span>
+                    <span>john doe</span>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-3 text-center">
+                <div class="fp-tag">
+                    <span>IN</span>
+                    <span>design</span>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-3 text-center">
+                <div class="fp-date">
+                    <span>ON</span>
+                    <span>april 20</span>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-3">
+                <div class="fp-like-comment pull-left">
+                    <span class="fa fa-heart-o"></span>
+                    <span>&nbsp;11&nbsp;</span>
+                    <span class="fa fa-comment-o"></span>
+                    <span>&nbsp;24&nbsp;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 padding-0">
+                <div class="fp-image">
+                    <!-- Image embedded here using background-image -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row row-margin-bottom-50">
+        <div class="col-md-12">
+            <p class="drop-cap fp-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+                <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+            </p>
+        </div>
+
+        <div class="col-md-12">
+            <div class="col-md-6 col-xs-12 text-center">
+                <span class="read-more-button">read more</span>
+            </div>
+
+            <div class="col-md-6 col-xs-12 text-center">
+                <div class="share-icons">
+                    <span class="social-icons-padding-right">SHARE</span>
+                    <i class="fa fa-facebook social-icons-padding-right" aria-hidden="true"></i>
+                    <i class="fa fa-twitter social-icons-padding-right" aria-hidden="true"></i>
+                    <i class="fa fa-pinterest social-icons-padding-right" aria-hidden="true"></i>
+                    <i class="fa fa-tumblr social-icons-padding-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POSTS -->
+    <div class="row row-margin-bottom-100">
+        <div class="col-md-4">
+            <div class="post">
+                <div class="post-image"><!-- Image embedded via background-image --></div>
+                <div class="text-center post-heading"><h2 class="">Rediscovering Nature</h2><p class="featured-post-h1-underline"></p></div>
+                <div class="post-meta">
+                    <div class="fp-tag pull-left">
+                        <span>IN</span>
+                        <span>design</span>
+                    </div>
+
+                    <div class="fp-like-comment pull-right">
+                        <span class="fa fa-heart-o"></span>
+                        <span>&nbsp;11&nbsp;</span>
+                        <span class="fa fa-comment-o"></span>
+                        <span>&nbsp;24&nbsp;</span>
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>
+                        Donec sed convallis lacus, id fermentum felis.
+                        Suspendisse posuere varius mi, ac euismod libero vestibulum nec.
+                        Proin molestie elementum justo eu semper.
+                        Curabitur non ligula nec risus convallis posuere.
+                        Donec in erat tristique, pellentesque justo vel.
+                    </p>
+                </div>
+                <div class="post-meta">
+                    <div class="fp-user pull-left">
+                        <img src="images/matt-alaniz-119775.jpg">
+                        <span>BY</span>
+                        <span>john doe</span>
+                    </div>
+
+                    <div class="fp-date pull-right">
+                        <span>ON</span>
+                        <span>april 20</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <span class="read-more-button">Read more</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="post">
+                <div class="post-image"><!-- Image embedded via background-image --></div>
+                <div class="text-center post-heading"><h2 class="">Rediscovering Nature</h2><p class="featured-post-h1-underline"></p></div>
+                <div class="post-meta">
+                    <div class="fp-tag pull-left">
+                        <span>IN</span>
+                        <span>design</span>
+                    </div>
+
+                    <div class="fp-like-comment pull-right">
+                        <span class="fa fa-heart-o"></span>
+                        <span>&nbsp;11&nbsp;</span>
+                        <span class="fa fa-comment-o"></span>
+                        <span>&nbsp;24&nbsp;</span>
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>
+                        Donec sed convallis lacus, id fermentum felis.
+                        Suspendisse posuere varius mi, ac euismod libero vestibulum nec.
+                        Proin molestie elementum justo eu semper.
+                        Curabitur non ligula nec risus convallis posuere.
+                        Donec in erat tristique, pellentesque justo vel.
+                    </p>
+                </div>
+                <div class="post-meta">
+                    <div class="fp-user pull-left">
+                        <img src="images/matt-alaniz-119775.jpg">
+                        <span>BY</span>
+                        <span>john doe</span>
+                    </div>
+
+                    <div class="fp-date pull-right">
+                        <span>ON</span>
+                        <span>april 20</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <span class="read-more-button">Read more</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="post">
+                <div class="post-image"><!-- Image embedded via background-image --></div>
+                <div class="text-center post-heading"><h2 class="">Rediscovering Nature</h2><p class="featured-post-h1-underline"></p></div>
+                <div class="post-meta">
+                    <div class="fp-tag pull-left">
+                        <span>IN</span>
+                        <span>design</span>
+                    </div>
+
+                    <div class="fp-like-comment pull-right">
+                        <span class="fa fa-heart-o"></span>
+                        <span>&nbsp;11&nbsp;</span>
+                        <span class="fa fa-comment-o"></span>
+                        <span>&nbsp;24&nbsp;</span>
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>
+                        Donec sed convallis lacus, id fermentum felis.
+                        Suspendisse posuere varius mi, ac euismod libero vestibulum nec.
+                        Proin molestie elementum justo eu semper.
+                        Curabitur non ligula nec risus convallis posuere.
+                        Donec in erat tristique, pellentesque justo vel.
+                    </p>
+                </div>
+                <div class="post-meta">
+                    <div class="fp-user pull-left">
+                        <img src="images/matt-alaniz-119775.jpg">
+                        <span>BY</span>
+                        <span>john doe</span>
+                    </div>
+
+                    <div class="fp-date pull-right">
+                        <span>ON</span>
+                        <span>april 20</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <span class="read-more-button">Read more</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-margin-bottom-100">
+        <div class="col-md-4">
+            <div class="post">
+                <div class="post-image"><!-- Image embedded via background-image --></div>
+                <div class="text-center post-heading"><h2 class="">Rediscovering Nature</h2><p class="featured-post-h1-underline"></p></div>
+                <div class="post-meta">
+                    <div class="fp-tag pull-left">
+                        <span>IN</span>
+                        <span>design</span>
+                    </div>
+
+                    <div class="fp-like-comment pull-right">
+                        <span class="fa fa-heart-o"></span>
+                        <span>&nbsp;11&nbsp;</span>
+                        <span class="fa fa-comment-o"></span>
+                        <span>&nbsp;24&nbsp;</span>
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>
+                        Donec sed convallis lacus, id fermentum felis.
+                        Suspendisse posuere varius mi, ac euismod libero vestibulum nec.
+                        Proin molestie elementum justo eu semper.
+                        Curabitur non ligula nec risus convallis posuere.
+                        Donec in erat tristique, pellentesque justo vel.
+                    </p>
+                </div>
+                <div class="post-meta">
+                    <div class="fp-user pull-left">
+                        <img src="images/matt-alaniz-119775.jpg">
+                        <span>BY</span>
+                        <span>john doe</span>
+                    </div>
+
+                    <div class="fp-date pull-right">
+                        <span>ON</span>
+                        <span>april 20</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <span class="read-more-button">Read more</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="post">
+                <div class="post-image"><!-- Image embedded via background-image --></div>
+                <div class="text-center post-heading"><h2 class="">Rediscovering Nature</h2><p class="featured-post-h1-underline"></p></div>
+                <div class="post-meta">
+                    <div class="fp-tag pull-left">
+                        <span>IN</span>
+                        <span>design</span>
+                    </div>
+
+                    <div class="fp-like-comment pull-right">
+                        <span class="fa fa-heart-o"></span>
+                        <span>&nbsp;11&nbsp;</span>
+                        <span class="fa fa-comment-o"></span>
+                        <span>&nbsp;24&nbsp;</span>
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>
+                        Donec sed convallis lacus, id fermentum felis.
+                        Suspendisse posuere varius mi, ac euismod libero vestibulum nec.
+                        Proin molestie elementum justo eu semper.
+                        Curabitur non ligula nec risus convallis posuere.
+                        Donec in erat tristique, pellentesque justo vel.
+                    </p>
+                </div>
+                <div class="post-meta">
+                    <div class="fp-user pull-left">
+                        <img src="images/matt-alaniz-119775.jpg">
+                        <span>BY</span>
+                        <span>john doe</span>
+                    </div>
+
+                    <div class="fp-date pull-right">
+                        <span>ON</span>
+                        <span>april 20</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <span class="read-more-button">Read more</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="post">
+                <div class="post-image"><!-- Image embedded via background-image --></div>
+                <div class="text-center post-heading"><h2 class="">Rediscovering Nature</h2><p class="featured-post-h1-underline"></p></div>
+                <div class="post-meta">
+                    <div class="fp-tag pull-left">
+                        <span>IN</span>
+                        <span>design</span>
+                    </div>
+
+                    <div class="fp-like-comment pull-right">
+                        <span class="fa fa-heart-o"></span>
+                        <span>&nbsp;11&nbsp;</span>
+                        <span class="fa fa-comment-o"></span>
+                        <span>&nbsp;24&nbsp;</span>
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>
+                        Donec sed convallis lacus, id fermentum felis.
+                        Suspendisse posuere varius mi, ac euismod libero vestibulum nec.
+                        Proin molestie elementum justo eu semper.
+                        Curabitur non ligula nec risus convallis posuere.
+                        Donec in erat tristique, pellentesque justo vel.
+                    </p>
+                </div>
+                <div class="post-meta">
+                    <div class="fp-user pull-left">
+                        <img src="images/matt-alaniz-119775.jpg">
+                        <span>BY</span>
+                        <span>john doe</span>
+                    </div>
+
+                    <div class="fp-date pull-right">
+                        <span>ON</span>
+                        <span>april 20</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <span class="read-more-button">Read more</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-margin-bottom-100">
+        <div class="col-md-12 text-center">
+            <p class="pagination-border"></p>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true" class="fa fa-chevron-left"></span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li class="active"><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true" class="fa fa-chevron-right"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="pagination-border"></p>
+        </div>
+    </div>
+
+    <div class="row row-margin-bottom-100">
+        <div class="col-md-12">
+            <div class="col-md-2">
+                <span>POPULAR TAGS</span>
+            </div>
+
+            <div class="col-md-10">
+                <div class="tags-bar">
+                    <span class="popular-tag popular-tag-video"></span>
+                    <span class="popular-tag popular-tag-presentations"></span>
+                    <span class="popular-tag popular-tag-trends"></span>
+                    <span class="popular-tag popular-tag-design"></span>
+                    <span class="popular-tag popular-tag-fashion"></span>
+                    <span class="popular-tag popular-tag-inspiration"></span>
+                    <span class="popular-tag popular-tag-travel"></span>
+                    <span class="popular-tag popular-tag-viewall"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-margin-bottom-100">
+        <div class="col-md-6">
+            <div class="aboutme text-center">
+                <p>ABOUT ME</p>
+                <img src="images/woman-868534_1280.jpg">
+                <p>
+                    Donec sed convallis lacus, id fermentum felis.
+                    Suspendisse posuere varius mi, ac euismod libero vestibulum nec.
+                    Proin molestie elementum justo eu semper.
+                </p>
+                <div>
+                    <span class="fa fa-facebook social-icons-padding-right"></span>
+                    <span class="fa fa-pinterest social-icons-padding-right"></span>
+                    <span class="fa fa-twitter social-icons-padding-right"></span>
+                    <span class="fa fa-google-plus social-icons-padding-right"></span>
+                    <span class="fa fa-instagram social-icons-padding-right"></span>
+                    <span class="fa fa-rss"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="subscribe text-center">
+                <p>SUBSCRIBE</p>
+                <p>
+                    Subscribe to our weekly newsletter and get our latest articles right in your inbox
+                </p>
+                <p class="emailaddress">EMAIL ADDRESS</p>
+                <span class="read-more-button">SUBSCRIBE</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row instagram-group">
+        <div class="col-md-2 padding-0"><div></div></div>
+        <div class="col-md-2 padding-0"><div></div></div>
+        <div class="col-md-2 padding-0"><div></div></div>
+        <div class="col-md-2 padding-0"><div></div></div>
+        <div class="col-md-2 padding-0"><div></div></div>
+        <div class="col-md-2 padding-0"><div></div></div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <footer class="display-flex">
+            <div class="col-md-3 col-xs-12">
+                <span class="site-logo site-logo-ferro">Ferro</span><span class="site-logo site-logo-blog">blog</span><span class="site-logo site-logo-dot">.</span>
+            </div>
+
+            <div class="col-md-1 text-center col-xs-12"><span>Help</span></div>
+            <div class="col-md-1 text-center col-xs-12"><span>Careers</span></div>
+            <div class="col-md-1 text-center col-xs-12"><span>Developers</span></div>
+            <div class="col-md-1 text-center col-xs-12"><span>Blogs</span></div>
+            <div class="col-md-1 text-center col-xs-12"><span>Privacy</span></div>
+            <div class="col-md-1 text-center col-xs-12"><span>Terms</span></div>
+            <div class="col-md-1 text-center col-xs-12"><span>About</span></div>
+
+            <div class="col-md-2 col-xs-12">
+                <span class="fa fa-twitter social-icons-padding-right"></span>
+                <span class="fa fa-facebook social-icons-padding-right"></span>
+                <span class="fa fa-instagram social-icons-padding-right"></span>
+                <span class="fa fa-pinterest"></span>
+            </div>
+        </footer>
+    </div>
+</div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

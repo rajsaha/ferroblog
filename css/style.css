@@ -1,9 +1,13 @@
+p, span {
+    font-family:Lato, sans-serif;
+}
+
 /* Bootstrap Class Override */
     .navbar {
         background-color: transparent;
         border-left-color: transparent;
         border-right-color: transparent;
-        font-family: 'Lato', sans-serif;
+        font-family: Lato, sans-serif;
         text-transform: uppercase;
         color:black;
         font-size:16px;
@@ -34,7 +38,8 @@
     .site-logo {
         text-transform: uppercase;
         font-weight: bold;
-        font-family: "Montserrat ExtraBold", serif;
+        font-family:Montserrat, sans-serif;
+        font-weight:800;
         font-size: 36px;
     }
 
@@ -50,6 +55,11 @@
         color:#4f65de;
     }
 
+/* Flex display */
+.display-flex {
+  display: flex;
+  align-items: baseline;
+}
 
 /*  Secondary Navigation*/
 .secondary-navigation {
@@ -80,7 +90,6 @@
 }
 
 .featured-categories {
-    font-family:Lato, sans-serif;
     text-transform: uppercase;
     cursor:pointer;
 }
@@ -90,7 +99,6 @@
 }
 
 .header {
-    font-family:Lato, sans-serif;
     text-transform: uppercase;
     color:#959595;
     font-size:14px;
@@ -107,14 +115,94 @@
 }
 
 .item {
-    padding:25px;
+    padding:15px;
     border-left:15px solid transparent;
+    cursor:pointer;
+}
+
+.item:hover {
+    transition:border-left-color 0.2s ease-in-out;
+    border-left-color:rgba(0,0,0,0.1);
 }
 
 .item-image {
-    background-color:#cccccc;
-    background:url("../images/foot-1885546.jpg") repeat 0 0;
+    position:relative;
+    background-color: rgba(0,0,0,0.5);
+    height:600px;
+    max-height:600px;
+    overflow:hidden;
+}
 
+.item-image img {
+    width:100%;
+    height:100%;
+}
+
+.image-blend {
+    mix-blend-mode: multiply;
+}
+
+.item-image>h1 {
+    position:absolute;
+    bottom:100px;
+    font-family:Montserrat, sans-serif;
+    padding:50px 150px 50px 100px;
+    color:white;
+    line-height:1.5em;
+}
+
+.item-read-more-button {
+    position:absolute;
+    color:white;
+    background-color:#3b55e6;
+    padding:10px 30px 10px 30px;
+    border-radius:20px;
+    left:100px;
+    bottom:50px;
+    text-transform: uppercase;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.item-pagination-container {
+    position:absolute;
+    left:125px;
+}
+
+.item-pagination {
+    position:absolute;
+    bottom:20px;
+    left:100px;
+    height:2px;
+    width:50px;
+    background-color:white;
+    cursor:pointer;
+}
+
+.item-pagination:hover {
+    transition:background-color 0.2s ease-in-out;
+    background-color:rgba(255,255,255,0.7);
+}
+
+.item-pagination:nth-of-type(2) {
+    left:160px;
+}
+
+.item-pagination:nth-of-type(3) {
+    left:220px;
+}
+
+.item-pagination:nth-of-type(4) {
+    left:280px;
+}
+
+.item-pagination:nth-of-type(5) {
+    left:340px;
+}
+
+.items-max-height {;
+    height:600px;
+    max-height:600px;
 }
 
 .item-active {
@@ -123,13 +211,14 @@
 
 .item-title {
     font-size: 18px;
-    font-family:"Montserrat SemiBold", Serif;
+    font-family:Montserrat, sans-serif;
+    font-weight:600;
+    color:#636363;
 }
 
 .date, .tags {
-    font-size:14px;
+    font-size:10px;
     text-transform: uppercase;
-    font-family:"Lato Semibold", sans-serif;
     color:#959595;
 }
 
@@ -139,9 +228,300 @@
     color:#959595;
 }
 
-.row-eq-height {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display:         flex;
+.row-margin-bottom-50 {
+    margin-bottom:50px;
+}
+
+.row-margin-bottom-100 {
+    margin-bottom:100px;
+}
+
+/* Featured Post (Full Width) */
+.featured-post-h1 {
+    font-family:Montserrat, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.featured-post-h1-underline {
+    height:3px;
+    width:50px;
+    background-color:black;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.fp-meta {
+    text-transform: uppercase;
+    margin-bottom:25px;
+}
+
+.fp-user img{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+}
+
+.fp-user span:nth-of-type(2) {
+    font-weight:bold;
+}
+
+.fp-tag span:nth-of-type(2) {
+    color:#b81f40;
+}
+
+.fp-image {
+    background:url("../images/_l8zdgj9m7w-biel-morro.jpg") no-repeat center center;
+    background-size:cover;
+    height:450px;
+    margin-bottom:50px;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.fp-text {
+    font-size:20px;
+    margin-bottom:50px;
+}
+
+.drop-cap:first-letter {
+    font-family:Lato, sans-serif;
+    font-weight:300;
+    font-size:120px;
+    margin-top:-0.30em;
+    float:left;
+}
+
+.read-more-button {
+    color: #3b55e6;
+    border: 1px solid #3b55e6;
+    padding:10px 30px 10px 30px;
+    border-radius:20px;
+    text-transform: uppercase;
+    font-size:14px;
+    cursor:pointer;
+    width:150px;
+}
+
+.read-more-button:hover{
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    color:white;
+    background-color:#363636;
+    border-color:#363636
+}
+
+.share-icons {
+    cursor:pointer;
+    color:#959595;
+}
+
+/* Post */
+.post {
+    /*height:500px;*/
+}
+
+.post-image {
+    background: url("../images/pexels-photo-134690.jpg") 0 0 no-repeat;
+    background-size:cover;
+    height:250px;
+}
+
+.post-heading h2{
+    font-family:Montserrat, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size:24px;
+    margin-bottom:50px;
+}
+
+.post-meta {
+    text-transform: uppercase;
+    margin-bottom:25px;
+    padding-bottom:25px;
+}
+
+.post-text {
+    font-size:18px;
+    font-family:Lato, sans-serif;
+    margin-bottom:25px;
+}
+
+/* Pagination */
+.pagination li a{
+    color:#959595;
+    font-family:Lato, sans-serif;
+    font-weight:700;
+    font-size:16px;
+    border:transparent;
+    border-radius:3px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.pagination li a:hover {
+    color:black;
+}
+
+.pagination>.active>a {
+    background-color:#363636;
+    color:white;
+    border-color:transparent;
+}
+
+.pagination>.active>a:hover {
+    background-color:#363636;
+    border-color:transparent;
+    cursor:pointer;
+}
+
+.pagination-border {
+    background-color:#dedede;
+    height:1px;
+    width:700px;
+    margin: -12px auto -10px auto;
+}
+
+/* Popular Tags */
+.popular-tag:after {
+    padding:10px 15px 10px 15px;
+    text-transform: uppercase;
+    border-radius:20px;
+    cursor:pointer;
+    border: 1px solid black;
+}
+
+.popular-tag-video:after {
+    border:1px solid #fe7273;
+    content:'video';
+}
+
+.popular-tag-presentations:after {
+    border:1px solid #97cb50;
+    content:'presentations';
+}
+
+.popular-tag-trends:after {
+    border:1px solid #2fb671;
+    content:'trends';
+}
+
+.popular-tag-design:after {
+    border:1px solid #ba2444;
+    content:'design'
+}
+
+.popular-tag-fashion:after {
+    border:1px solid #abcece;
+    content:'fashion';
+}
+
+.popular-tag-inspiration:after {
+    border:1px solid #5e74eb;
+    content:'inspiration'
+}
+
+.popular-tag-travel:after {
+    border:1px solid #c5ac54;
+    content:'travel';
+}
+
+.popular-tag-viewall:after {
+    background-color: #f1f1f1;
+    color:black;
+    content:'view all';
+    border-color:transparent;
+}
+
+/* About Me */
+.aboutme img {
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    margin-bottom:25px;
+}
+
+.aboutme p:nth-of-type(1) {
+    font-size:18px;
+}
+
+.aboutme p:nth-of-type(2) {
+    font-size:16px;
+    line-height:1.5em;
+    width:350px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:25px;
+}
+
+.subscribe p:nth-of-type(1) {
+    font-size:18px;
+}
+
+.subscribe p:nth-of-type(2) {
+    font-family:Lato, sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-bottom:50px;
+}
+
+.emailaddress {
+    color: black;
+    border: 1px solid #959595;
+    padding:10px 30px 10px 30px;
+    border-radius:20px;
+    text-transform: uppercase;
+    font-size:14px;
+    cursor:pointer;
+    margin-bottom:25px;
+}
+
+/* Instagram Group */
+.instagram-group>div {
+    height:224px;
+    background-size:cover;
+}
+
+.instagram-group>div:nth-of-type(1) {
+    background-image: url("../images/melon-625130_1920.png");
+}
+
+.instagram-group div:nth-of-type(2) {
+    background-image: url("../images/pexels-photo-131324.png");
+}
+
+.instagram-group div:nth-of-type(3) {
+    background-image: url("../images/beach-394503_1920.png");
+}
+
+.instagram-group div:nth-of-type(4) {
+    background-image: url("../images/4ascchq1hzk-amy-treasure.png");
+}
+
+.instagram-group div:nth-of-type(5) {
+    background-image: url("../images/santorini-1663658_1920.png");
+}
+
+.instagram-group div:nth-of-type(6) {
+    background-image: url("../images/essential-oils-1433692_1920.png");
+}
+
+/* Footer */
+footer {
+    background-color:#f8f8f8;
+    padding-top:75px;
+    padding-bottom:50px;
+    font-family:Montserrat, sans-serif;
+    margin-top:25px;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+footer .site-logo {
+    font-size:24.94pt;
+}
+
+footer span {
+    text-transform: uppercase;
 }
